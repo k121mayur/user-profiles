@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 
 import { useEffect, useState } from 'react'
 import Card from 'react-bootstrap/Card'
@@ -23,7 +24,7 @@ function App() {
 
       { profiles.map( (profile) => (
           
-            <Card className='m-3 col-3 shadow bg-light rounded-5'>
+            <Card className='m-3 shadow bg-light rounded-5'>
               <Card.Img variant="top" style={{ borderRadius: '50%', border: '1px solid blue'}} src={profile.avatar} />
               <Card.Body>
                 <Card.Title>{profile.first_name} {profile.last_name}</Card.Title>
